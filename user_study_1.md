@@ -1,4 +1,30 @@
-## Polling Bots
+## Greeting Command
+```
+start bot
+command greet(firstname: string, lastname?: string) {
+    var message = "Hello, " + firstname;
+    
+    if (lastname !== undefined) {
+        message = message + " " + lastname;
+    }
+    message = message + "!";
+
+    reply(message);
+}
+end bot
+
+token = *TOKEN*,
+clientID = *client_id*,
+guildId = *guild_id*
+```
+
+Results in: 
+
+<img width="1104" alt="image" src="https://user-images.githubusercontent.com/50648660/193162062-3f4249f0-927d-496f-b48e-905fecf4352c.png">
+<img width="295" alt="image" src="https://user-images.githubusercontent.com/50648660/193162089-68a57ba9-ea98-4afb-aa38-f8da971e6c4b.png">
+
+
+## Polling Command
 ```
 start bot
 
