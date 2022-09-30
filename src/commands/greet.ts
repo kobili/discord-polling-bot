@@ -21,7 +21,7 @@ const greetCommand: DiscordBotSlashCommand = {
         const lastName = interaction.options.getString("lastname");
 
         let message = "Hello, " + firstName;
-        if (lastName !== null) {
+        if (lastName != undefined) {
             message = message + " " + lastName;
         }
 
